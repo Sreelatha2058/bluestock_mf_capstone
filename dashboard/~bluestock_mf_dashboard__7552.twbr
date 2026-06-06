@@ -1,0 +1,1698 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0512.1636                               -->
+<workbook original-version='18.1' source-build='2026.1.2 (20261.26.0512.1636)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='fund_scorecard' inline='true' name='federated.1t5r1qg0o4znxv10xu5191wnnjfx' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='fund_scorecard' name='textscan.07ntoew104gewf19ekhoy0kn7o5e'>
+            <connection class='textscan' directory='C:/Users/DELL/OneDrive/Desktop/bluestock_mf_capstone/data/processed_data' filename='fund_scorecard.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.07ntoew104gewf19ekhoy0kn7o5e' name='fund_scorecard.csv' table='[fund_scorecard#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='amfi_code' ordinal='0' />
+            <column datatype='string' name='scheme_name' ordinal='1' />
+            <column datatype='real' name='cagr_3yr' ordinal='2' />
+            <column datatype='real' name='sharpe_ratio_computed' ordinal='3' />
+            <column datatype='real' name='alpha' ordinal='4' />
+            <column datatype='real' name='max_drawdown_pct' ordinal='5' />
+            <column datatype='real' name='expense_ratio_pct' ordinal='6' />
+            <column datatype='real' name='rank_return' ordinal='7' />
+            <column datatype='real' name='rank_sharpe' ordinal='8' />
+            <column datatype='real' name='rank_alpha' ordinal='9' />
+            <column datatype='real' name='rank_expense' ordinal='10' />
+            <column datatype='real' name='rank_drawdown' ordinal='11' />
+            <column datatype='real' name='score' ordinal='12' />
+            <column datatype='real' name='score_100' ordinal='13' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[fund_scorecard.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amfi_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[amfi_code]</local-name>
+            <parent-name>[fund_scorecard.csv]</parent-name>
+            <remote-alias>amfi_code</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fund_scorecard.csv_0413C01D7D8A4D5AB92B05CDA5D5857B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>scheme_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[scheme_name]</local-name>
+            <parent-name>[fund_scorecard.csv]</parent-name>
+            <remote-alias>scheme_name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[fund_scorecard.csv_0413C01D7D8A4D5AB92B05CDA5D5857B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cagr_3yr</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cagr_3yr]</local-name>
+            <parent-name>[fund_scorecard.csv]</parent-name>
+            <remote-alias>cagr_3yr</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fund_scorecard.csv_0413C01D7D8A4D5AB92B05CDA5D5857B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sharpe_ratio_computed</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sharpe_ratio_computed]</local-name>
+            <parent-name>[fund_scorecard.csv]</parent-name>
+            <remote-alias>sharpe_ratio_computed</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fund_scorecard.csv_0413C01D7D8A4D5AB92B05CDA5D5857B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>alpha</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[alpha]</local-name>
+            <parent-name>[fund_scorecard.csv]</parent-name>
+            <remote-alias>alpha</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fund_scorecard.csv_0413C01D7D8A4D5AB92B05CDA5D5857B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>max_drawdown_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[max_drawdown_pct]</local-name>
+            <parent-name>[fund_scorecard.csv]</parent-name>
+            <remote-alias>max_drawdown_pct</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fund_scorecard.csv_0413C01D7D8A4D5AB92B05CDA5D5857B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>expense_ratio_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[expense_ratio_pct]</local-name>
+            <parent-name>[fund_scorecard.csv]</parent-name>
+            <remote-alias>expense_ratio_pct</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fund_scorecard.csv_0413C01D7D8A4D5AB92B05CDA5D5857B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rank_return</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rank_return]</local-name>
+            <parent-name>[fund_scorecard.csv]</parent-name>
+            <remote-alias>rank_return</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fund_scorecard.csv_0413C01D7D8A4D5AB92B05CDA5D5857B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rank_sharpe</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rank_sharpe]</local-name>
+            <parent-name>[fund_scorecard.csv]</parent-name>
+            <remote-alias>rank_sharpe</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fund_scorecard.csv_0413C01D7D8A4D5AB92B05CDA5D5857B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rank_alpha</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rank_alpha]</local-name>
+            <parent-name>[fund_scorecard.csv]</parent-name>
+            <remote-alias>rank_alpha</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fund_scorecard.csv_0413C01D7D8A4D5AB92B05CDA5D5857B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rank_expense</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rank_expense]</local-name>
+            <parent-name>[fund_scorecard.csv]</parent-name>
+            <remote-alias>rank_expense</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fund_scorecard.csv_0413C01D7D8A4D5AB92B05CDA5D5857B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rank_drawdown</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rank_drawdown]</local-name>
+            <parent-name>[fund_scorecard.csv]</parent-name>
+            <remote-alias>rank_drawdown</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fund_scorecard.csv_0413C01D7D8A4D5AB92B05CDA5D5857B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[score]</local-name>
+            <parent-name>[fund_scorecard.csv]</parent-name>
+            <remote-alias>score</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fund_scorecard.csv_0413C01D7D8A4D5AB92B05CDA5D5857B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>score_100</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[score_100]</local-name>
+            <parent-name>[fund_scorecard.csv]</parent-name>
+            <remote-alias>score_100</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fund_scorecard.csv_0413C01D7D8A4D5AB92B05CDA5D5857B]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='fund_scorecard.csv' datatype='table' name='[__tableau_internal_object_id__].[fund_scorecard.csv_0413C01D7D8A4D5AB92B05CDA5D5857B]' role='measure' type='quantitative' />
+      <column caption='Alpha' datatype='real' name='[alpha]' role='measure' type='quantitative' />
+      <column caption='Amfi Code' datatype='integer' name='[amfi_code]' role='dimension' type='ordinal' />
+      <column caption='Cagr 3Yr' datatype='real' name='[cagr_3yr]' role='dimension' type='quantitative' />
+      <column caption='Expense Ratio Pct' datatype='real' name='[expense_ratio_pct]' role='measure' type='quantitative' />
+      <column caption='Max Drawdown Pct' datatype='real' name='[max_drawdown_pct]' role='measure' type='quantitative' />
+      <column caption='Rank Alpha' datatype='real' name='[rank_alpha]' role='measure' type='quantitative' />
+      <column caption='Rank Drawdown' datatype='real' name='[rank_drawdown]' role='measure' type='quantitative' />
+      <column caption='Rank Expense' datatype='real' name='[rank_expense]' role='measure' type='quantitative' />
+      <column caption='Rank Return' datatype='real' name='[rank_return]' role='measure' type='quantitative' />
+      <column caption='Rank Sharpe' datatype='real' name='[rank_sharpe]' role='measure' type='quantitative' />
+      <column caption='Scheme Name' datatype='string' name='[scheme_name]' role='dimension' type='nominal' />
+      <column caption='Score' datatype='real' name='[score]' role='measure' type='quantitative' />
+      <column caption='Score 100' datatype='real' name='[score_100]' role='measure' type='quantitative' />
+      <column caption='Sharpe Ratio Computed' datatype='real' name='[sharpe_ratio_computed]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_0qofcqu1nv719y1bwm3pq1l6zz0r.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/05/2026 11:34:56 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>amfi_code</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[amfi_code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>amfi_code</remote-alias>
+              <ordinal>0</ordinal>
+              <family>fund_scorecard.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>scheme_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[scheme_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>scheme_name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>fund_scorecard.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cagr_3yr</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[cagr_3yr]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cagr_3yr</remote-alias>
+              <ordinal>2</ordinal>
+              <family>fund_scorecard.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sharpe_ratio_computed</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[sharpe_ratio_computed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sharpe_ratio_computed</remote-alias>
+              <ordinal>3</ordinal>
+              <family>fund_scorecard.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>alpha</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[alpha]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>alpha</remote-alias>
+              <ordinal>4</ordinal>
+              <family>fund_scorecard.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>max_drawdown_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[max_drawdown_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>max_drawdown_pct</remote-alias>
+              <ordinal>5</ordinal>
+              <family>fund_scorecard.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>expense_ratio_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[expense_ratio_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>expense_ratio_pct</remote-alias>
+              <ordinal>6</ordinal>
+              <family>fund_scorecard.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rank_return</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[rank_return]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rank_return</remote-alias>
+              <ordinal>7</ordinal>
+              <family>fund_scorecard.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rank_sharpe</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[rank_sharpe]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rank_sharpe</remote-alias>
+              <ordinal>8</ordinal>
+              <family>fund_scorecard.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rank_alpha</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[rank_alpha]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rank_alpha</remote-alias>
+              <ordinal>9</ordinal>
+              <family>fund_scorecard.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rank_expense</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[rank_expense]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rank_expense</remote-alias>
+              <ordinal>10</ordinal>
+              <family>fund_scorecard.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rank_drawdown</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[rank_drawdown]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rank_drawdown</remote-alias>
+              <ordinal>11</ordinal>
+              <family>fund_scorecard.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>score</remote-alias>
+              <ordinal>12</ordinal>
+              <family>fund_scorecard.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>score_100</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[score_100]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>score_100</remote-alias>
+              <ordinal>13</ordinal>
+              <family>fund_scorecard.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='fund_scorecard.csv' id='fund_scorecard.csv_0413C01D7D8A4D5AB92B05CDA5D5857B'>
+            <properties context=''>
+              <relation connection='textscan.07ntoew104gewf19ekhoy0kn7o5e' name='fund_scorecard.csv' table='[fund_scorecard#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='amfi_code' ordinal='0' />
+                  <column datatype='string' name='scheme_name' ordinal='1' />
+                  <column datatype='real' name='cagr_3yr' ordinal='2' />
+                  <column datatype='real' name='sharpe_ratio_computed' ordinal='3' />
+                  <column datatype='real' name='alpha' ordinal='4' />
+                  <column datatype='real' name='max_drawdown_pct' ordinal='5' />
+                  <column datatype='real' name='expense_ratio_pct' ordinal='6' />
+                  <column datatype='real' name='rank_return' ordinal='7' />
+                  <column datatype='real' name='rank_sharpe' ordinal='8' />
+                  <column datatype='real' name='rank_alpha' ordinal='9' />
+                  <column datatype='real' name='rank_expense' ordinal='10' />
+                  <column datatype='real' name='rank_drawdown' ordinal='11' />
+                  <column datatype='real' name='score' ordinal='12' />
+                  <column datatype='real' name='score_100' ordinal='13' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='clean_nav' inline='true' name='federated.1nfdarw1krybqe13nf5yh1oazbjx' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='clean_nav' name='textscan.0688fat1tr6klk1bt6zj70qj8clx'>
+            <connection class='textscan' directory='C:/Users/DELL/OneDrive/Desktop/bluestock_mf_capstone/data/processed_data' filename='clean_nav.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0688fat1tr6klk1bt6zj70qj8clx' name='clean_nav.csv' table='[clean_nav#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='amfi_code' ordinal='0' />
+            <column datatype='date' name='date' ordinal='1' />
+            <column datatype='real' name='nav' ordinal='2' />
+            <column datatype='real' name='daily_return_pct' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[clean_nav.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amfi_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[amfi_code]</local-name>
+            <parent-name>[clean_nav.csv]</parent-name>
+            <remote-alias>amfi_code</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clean_nav.csv_248107A6A440478A869FE13BC68D7B38]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[clean_nav.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clean_nav.csv_248107A6A440478A869FE13BC68D7B38]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nav</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[nav]</local-name>
+            <parent-name>[clean_nav.csv]</parent-name>
+            <remote-alias>nav</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clean_nav.csv_248107A6A440478A869FE13BC68D7B38]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>daily_return_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[daily_return_pct]</local-name>
+            <parent-name>[clean_nav.csv]</parent-name>
+            <remote-alias>daily_return_pct</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clean_nav.csv_248107A6A440478A869FE13BC68D7B38]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='clean_nav.csv' datatype='table' name='[__tableau_internal_object_id__].[clean_nav.csv_248107A6A440478A869FE13BC68D7B38]' role='measure' type='quantitative' />
+      <column caption='Amfi Code' datatype='integer' name='[amfi_code]' role='dimension' type='ordinal' />
+      <column caption='Daily Return Pct' datatype='real' name='[daily_return_pct]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Nav' datatype='real' name='[nav]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_0m7g65j04uuomc1b5fjym0jhsebz.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/05/2026 11:57:33 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>amfi_code</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[amfi_code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>amfi_code</remote-alias>
+              <ordinal>0</ordinal>
+              <family>clean_nav.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date</remote-alias>
+              <ordinal>1</ordinal>
+              <family>clean_nav.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>3151</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>nav</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[nav]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>nav</remote-alias>
+              <ordinal>2</ordinal>
+              <family>clean_nav.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>46000</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>daily_return_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[daily_return_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>daily_return_pct</remote-alias>
+              <ordinal>3</ordinal>
+              <family>clean_nav.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>43698</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='clean_nav.csv' id='clean_nav.csv_248107A6A440478A869FE13BC68D7B38'>
+            <properties context=''>
+              <relation connection='textscan.0688fat1tr6klk1bt6zj70qj8clx' name='clean_nav.csv' table='[clean_nav#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='amfi_code' ordinal='0' />
+                  <column datatype='date' name='date' ordinal='1' />
+                  <column datatype='real' name='nav' ordinal='2' />
+                  <column datatype='real' name='daily_return_pct' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='clean_transactions' inline='true' name='federated.10f6pp60f7eeie15wlr8u0zwk3is' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='clean_transactions' name='textscan.16sa16a1nzrdny1db662z0frqhv2'>
+            <connection class='textscan' directory='C:/Users/DELL/OneDrive/Desktop/bluestock_mf_capstone/data/processed_data' filename='clean_transactions.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.16sa16a1nzrdny1db662z0frqhv2' name='clean_transactions.csv' table='[clean_transactions#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='investor_id' ordinal='0' />
+            <column datatype='date' name='transaction_date' ordinal='1' />
+            <column datatype='integer' name='amfi_code' ordinal='2' />
+            <column datatype='string' name='transaction_type' ordinal='3' />
+            <column datatype='integer' name='amount_inr' ordinal='4' />
+            <column datatype='string' name='state' ordinal='5' />
+            <column datatype='string' name='city' ordinal='6' />
+            <column datatype='string' name='city_tier' ordinal='7' />
+            <column datatype='string' name='age_group' ordinal='8' />
+            <column datatype='string' name='gender' ordinal='9' />
+            <column datatype='real' name='annual_income_lakh' ordinal='10' />
+            <column datatype='string' name='payment_mode' ordinal='11' />
+            <column datatype='string' name='kyc_status' ordinal='12' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[clean_transactions.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>investor_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[investor_id]</local-name>
+            <parent-name>[clean_transactions.csv]</parent-name>
+            <remote-alias>investor_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[clean_transactions.csv_3448DFF8A7E44099BD5F99C4C5F4E57D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transaction_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[transaction_date]</local-name>
+            <parent-name>[clean_transactions.csv]</parent-name>
+            <remote-alias>transaction_date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clean_transactions.csv_3448DFF8A7E44099BD5F99C4C5F4E57D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amfi_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[amfi_code]</local-name>
+            <parent-name>[clean_transactions.csv]</parent-name>
+            <remote-alias>amfi_code</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clean_transactions.csv_3448DFF8A7E44099BD5F99C4C5F4E57D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transaction_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[transaction_type]</local-name>
+            <parent-name>[clean_transactions.csv]</parent-name>
+            <remote-alias>transaction_type</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[clean_transactions.csv_3448DFF8A7E44099BD5F99C4C5F4E57D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amount_inr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[amount_inr]</local-name>
+            <parent-name>[clean_transactions.csv]</parent-name>
+            <remote-alias>amount_inr</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clean_transactions.csv_3448DFF8A7E44099BD5F99C4C5F4E57D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[clean_transactions.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[clean_transactions.csv_3448DFF8A7E44099BD5F99C4C5F4E57D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[clean_transactions.csv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[clean_transactions.csv_3448DFF8A7E44099BD5F99C4C5F4E57D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city_tier</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city_tier]</local-name>
+            <parent-name>[clean_transactions.csv]</parent-name>
+            <remote-alias>city_tier</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[clean_transactions.csv_3448DFF8A7E44099BD5F99C4C5F4E57D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age_group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[age_group]</local-name>
+            <parent-name>[clean_transactions.csv]</parent-name>
+            <remote-alias>age_group</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[clean_transactions.csv_3448DFF8A7E44099BD5F99C4C5F4E57D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[clean_transactions.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[clean_transactions.csv_3448DFF8A7E44099BD5F99C4C5F4E57D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>annual_income_lakh</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[annual_income_lakh]</local-name>
+            <parent-name>[clean_transactions.csv]</parent-name>
+            <remote-alias>annual_income_lakh</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clean_transactions.csv_3448DFF8A7E44099BD5F99C4C5F4E57D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payment_mode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[payment_mode]</local-name>
+            <parent-name>[clean_transactions.csv]</parent-name>
+            <remote-alias>payment_mode</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[clean_transactions.csv_3448DFF8A7E44099BD5F99C4C5F4E57D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>kyc_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[kyc_status]</local-name>
+            <parent-name>[clean_transactions.csv]</parent-name>
+            <remote-alias>kyc_status</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[clean_transactions.csv_3448DFF8A7E44099BD5F99C4C5F4E57D]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='clean_transactions.csv' datatype='table' name='[__tableau_internal_object_id__].[clean_transactions.csv_3448DFF8A7E44099BD5F99C4C5F4E57D]' role='measure' type='quantitative' />
+      <column caption='Age Group' datatype='string' name='[age_group]' role='dimension' type='nominal' />
+      <column caption='Amfi Code' datatype='integer' name='[amfi_code]' role='dimension' type='ordinal' />
+      <column caption='Amount Inr' datatype='integer' name='[amount_inr]' role='measure' type='quantitative' />
+      <column caption='Annual Income Lakh' datatype='real' name='[annual_income_lakh]' role='measure' type='quantitative' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='City Tier' datatype='string' name='[city_tier]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Investor Id' datatype='string' name='[investor_id]' role='dimension' type='nominal' />
+      <column caption='Kyc Status' datatype='string' name='[kyc_status]' role='dimension' type='nominal' />
+      <column caption='Payment Mode' datatype='string' name='[payment_mode]' role='dimension' type='nominal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Transaction Date' datatype='date' name='[transaction_date]' role='dimension' type='ordinal' />
+      <column caption='Transaction Type' datatype='string' name='[transaction_type]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_1dk2hbi0yve1me167kh8m0q5hao0.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/05/2026 12:08:44 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>investor_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[investor_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>investor_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>clean_transactions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6616</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>transaction_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[transaction_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>transaction_date</remote-alias>
+              <ordinal>1</ordinal>
+              <family>clean_transactions.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1090</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>amfi_code</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[amfi_code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>amfi_code</remote-alias>
+              <ordinal>2</ordinal>
+              <family>clean_transactions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>transaction_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[transaction_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>transaction_type</remote-alias>
+              <ordinal>3</ordinal>
+              <family>clean_transactions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>amount_inr</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[amount_inr]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>amount_inr</remote-alias>
+              <ordinal>4</ordinal>
+              <family>clean_transactions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13490</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>state</remote-alias>
+              <ordinal>5</ordinal>
+              <family>clean_transactions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>city</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[city]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>city</remote-alias>
+              <ordinal>6</ordinal>
+              <family>clean_transactions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>city_tier</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[city_tier]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>city_tier</remote-alias>
+              <ordinal>7</ordinal>
+              <family>clean_transactions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>age_group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[age_group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age_group</remote-alias>
+              <ordinal>8</ordinal>
+              <family>clean_transactions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>9</ordinal>
+              <family>clean_transactions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>annual_income_lakh</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[annual_income_lakh]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>annual_income_lakh</remote-alias>
+              <ordinal>10</ordinal>
+              <family>clean_transactions.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1348</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>payment_mode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[payment_mode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>payment_mode</remote-alias>
+              <ordinal>11</ordinal>
+              <family>clean_transactions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>kyc_status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[kyc_status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>kyc_status</remote-alias>
+              <ordinal>12</ordinal>
+              <family>clean_transactions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='clean_transactions.csv' id='clean_transactions.csv_3448DFF8A7E44099BD5F99C4C5F4E57D'>
+            <properties context=''>
+              <relation connection='textscan.16sa16a1nzrdny1db662z0frqhv2' name='clean_transactions.csv' table='[clean_transactions#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='investor_id' ordinal='0' />
+                  <column datatype='date' name='transaction_date' ordinal='1' />
+                  <column datatype='integer' name='amfi_code' ordinal='2' />
+                  <column datatype='string' name='transaction_type' ordinal='3' />
+                  <column datatype='integer' name='amount_inr' ordinal='4' />
+                  <column datatype='string' name='state' ordinal='5' />
+                  <column datatype='string' name='city' ordinal='6' />
+                  <column datatype='string' name='city_tier' ordinal='7' />
+                  <column datatype='string' name='age_group' ordinal='8' />
+                  <column datatype='string' name='gender' ordinal='9' />
+                  <column datatype='real' name='annual_income_lakh' ordinal='10' />
+                  <column datatype='string' name='payment_mode' ordinal='11' />
+                  <column datatype='string' name='kyc_status' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='clean_sip_inflows' inline='true' name='federated.12cvcsp1ij82sg1f266nv1bf3lng' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='clean_sip_inflows' name='textscan.156ei0p110vqvk1ba4zfz1efwmbd'>
+            <connection class='textscan' directory='C:/Users/DELL/OneDrive/Desktop/bluestock_mf_capstone/data/processed_data' filename='clean_sip_inflows.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.156ei0p110vqvk1ba4zfz1efwmbd' name='clean_sip_inflows.csv' table='[clean_sip_inflows#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='date' name='month' ordinal='0' />
+            <column datatype='integer' name='sip_inflow_crore' ordinal='1' />
+            <column datatype='real' name='active_sip_accounts_crore' ordinal='2' />
+            <column datatype='real' name='new_sip_accounts_lakh' ordinal='3' />
+            <column datatype='real' name='sip_aum_lakh_crore' ordinal='4' />
+            <column datatype='real' name='yoy_growth_pct' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[clean_sip_inflows.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[clean_sip_inflows.csv]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clean_sip_inflows.csv_E42955386ED64CD38911D03C1EA589C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sip_inflow_crore</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sip_inflow_crore]</local-name>
+            <parent-name>[clean_sip_inflows.csv]</parent-name>
+            <remote-alias>sip_inflow_crore</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clean_sip_inflows.csv_E42955386ED64CD38911D03C1EA589C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>active_sip_accounts_crore</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[active_sip_accounts_crore]</local-name>
+            <parent-name>[clean_sip_inflows.csv]</parent-name>
+            <remote-alias>active_sip_accounts_crore</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clean_sip_inflows.csv_E42955386ED64CD38911D03C1EA589C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>new_sip_accounts_lakh</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[new_sip_accounts_lakh]</local-name>
+            <parent-name>[clean_sip_inflows.csv]</parent-name>
+            <remote-alias>new_sip_accounts_lakh</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clean_sip_inflows.csv_E42955386ED64CD38911D03C1EA589C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sip_aum_lakh_crore</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sip_aum_lakh_crore]</local-name>
+            <parent-name>[clean_sip_inflows.csv]</parent-name>
+            <remote-alias>sip_aum_lakh_crore</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clean_sip_inflows.csv_E42955386ED64CD38911D03C1EA589C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>yoy_growth_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[yoy_growth_pct]</local-name>
+            <parent-name>[clean_sip_inflows.csv]</parent-name>
+            <remote-alias>yoy_growth_pct</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clean_sip_inflows.csv_E42955386ED64CD38911D03C1EA589C8]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='clean_sip_inflows.csv' datatype='table' name='[__tableau_internal_object_id__].[clean_sip_inflows.csv_E42955386ED64CD38911D03C1EA589C8]' role='measure' type='quantitative' />
+      <column caption='Active Sip Accounts Crore' datatype='real' name='[active_sip_accounts_crore]' role='measure' type='quantitative' />
+      <column caption='Month' datatype='date' name='[month]' role='dimension' type='ordinal' />
+      <column caption='New Sip Accounts Lakh' datatype='real' name='[new_sip_accounts_lakh]' role='measure' type='quantitative' />
+      <column caption='Sip Aum Lakh Crore' datatype='real' name='[sip_aum_lakh_crore]' role='measure' type='quantitative' />
+      <column caption='Sip Inflow Crore' datatype='integer' name='[sip_inflow_crore]' role='measure' type='quantitative' />
+      <column caption='Yoy Growth Pct' datatype='real' name='[yoy_growth_pct]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_089txyb0xa18bx1a7lkm21a39gv8.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/05/2026 12:14:44 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>month</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>month</remote-alias>
+              <ordinal>0</ordinal>
+              <family>clean_sip_inflows.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>48</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[clean_sip_inflows.csv_E42955386ED64CD38911D03C1EA589C8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sip_inflow_crore</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sip_inflow_crore]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sip_inflow_crore</remote-alias>
+              <ordinal>1</ordinal>
+              <family>clean_sip_inflows.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>45</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[clean_sip_inflows.csv_E42955386ED64CD38911D03C1EA589C8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>active_sip_accounts_crore</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[active_sip_accounts_crore]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>active_sip_accounts_crore</remote-alias>
+              <ordinal>2</ordinal>
+              <family>clean_sip_inflows.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>44</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[clean_sip_inflows.csv_E42955386ED64CD38911D03C1EA589C8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>new_sip_accounts_lakh</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[new_sip_accounts_lakh]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>new_sip_accounts_lakh</remote-alias>
+              <ordinal>3</ordinal>
+              <family>clean_sip_inflows.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[clean_sip_inflows.csv_E42955386ED64CD38911D03C1EA589C8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sip_aum_lakh_crore</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[sip_aum_lakh_crore]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sip_aum_lakh_crore</remote-alias>
+              <ordinal>4</ordinal>
+              <family>clean_sip_inflows.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>48</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[clean_sip_inflows.csv_E42955386ED64CD38911D03C1EA589C8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>yoy_growth_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[yoy_growth_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>yoy_growth_pct</remote-alias>
+              <ordinal>5</ordinal>
+              <family>clean_sip_inflows.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>37</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[clean_sip_inflows.csv_E42955386ED64CD38911D03C1EA589C8]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='clean_sip_inflows.csv' id='clean_sip_inflows.csv_E42955386ED64CD38911D03C1EA589C8'>
+            <properties context=''>
+              <relation connection='textscan.156ei0p110vqvk1ba4zfz1efwmbd' name='clean_sip_inflows.csv' table='[clean_sip_inflows#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='date' name='month' ordinal='0' />
+                  <column datatype='integer' name='sip_inflow_crore' ordinal='1' />
+                  <column datatype='real' name='active_sip_accounts_crore' ordinal='2' />
+                  <column datatype='real' name='new_sip_accounts_lakh' ordinal='3' />
+                  <column datatype='real' name='sip_aum_lakh_crore' ordinal='4' />
+                  <column datatype='real' name='yoy_growth_pct' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Fund Scorecard'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fund_scorecard' name='federated.1t5r1qg0o4znxv10xu5191wnnjfx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t5r1qg0o4znxv10xu5191wnnjfx'>
+            <column caption='Alpha' datatype='real' name='[alpha]' role='measure' type='quantitative' />
+            <column caption='Expense Ratio Pct' datatype='real' name='[expense_ratio_pct]' role='measure' type='quantitative' />
+            <column caption='Max Drawdown Pct' datatype='real' name='[max_drawdown_pct]' role='measure' type='quantitative' />
+            <column-instance column='[scheme_name]' derivation='None' name='[none:scheme_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[score_100]' derivation='None' name='[none:score_100:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sharpe_ratio_computed]' derivation='None' name='[none:sharpe_ratio_computed:qk]' pivot='key' type='quantitative' />
+            <column caption='Scheme Name' datatype='string' name='[scheme_name]' role='dimension' type='nominal' />
+            <column caption='Score 100' datatype='real' name='[score_100]' role='measure' type='quantitative' />
+            <column caption='Sharpe Ratio Computed' datatype='real' name='[sharpe_ratio_computed]' role='measure' type='quantitative' />
+            <column-instance column='[alpha]' derivation='Sum' name='[sum:alpha:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[expense_ratio_pct]' derivation='Sum' name='[sum:expense_ratio_pct:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[max_drawdown_pct]' derivation='Sum' name='[sum:max_drawdown_pct:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[score_100]' derivation='Sum' name='[sum:score_100:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sharpe_ratio_computed]' derivation='Sum' name='[sum:sharpe_ratio_computed:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1t5r1qg0o4znxv10xu5191wnnjfx].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t5r1qg0o4znxv10xu5191wnnjfx].[sum:alpha:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t5r1qg0o4znxv10xu5191wnnjfx].[sum:expense_ratio_pct:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t5r1qg0o4znxv10xu5191wnnjfx].[sum:max_drawdown_pct:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t5r1qg0o4znxv10xu5191wnnjfx].[sum:score_100:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t5r1qg0o4znxv10xu5191wnnjfx].[sum:sharpe_ratio_computed:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1t5r1qg0o4znxv10xu5191wnnjfx].[none:score_100:qk]' included-values='in-range'>
+            <min>0.0</min>
+            <max>100.0</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1t5r1qg0o4znxv10xu5191wnnjfx].[none:sharpe_ratio_computed:qk]' included-values='in-range'>
+            <min>-0.81559999999999999</min>
+            <max>1.4482999999999999</max>
+          </filter>
+          <slices>
+            <column>[federated.1t5r1qg0o4znxv10xu5191wnnjfx].[:Measure Names]</column>
+            <column>[federated.1t5r1qg0o4znxv10xu5191wnnjfx].[none:score_100:qk]</column>
+            <column>[federated.1t5r1qg0o4znxv10xu5191wnnjfx].[none:sharpe_ratio_computed:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1t5r1qg0o4znxv10xu5191wnnjfx].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t5r1qg0o4znxv10xu5191wnnjfx].[none:scheme_name:nk]</rows>
+        <cols>[federated.1t5r1qg0o4znxv10xu5191wnnjfx].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{BB5E6418-0BC1-46E9-BDBD-E73ECFC1F3F7}' />
+    </worksheet>
+    <worksheet name='Investor Analytics'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_transactions' name='federated.10f6pp60f7eeie15wlr8u0zwk3is' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10f6pp60f7eeie15wlr8u0zwk3is'>
+            <column caption='Age Group' datatype='string' name='[age_group]' role='dimension' type='nominal' />
+            <column caption='Amount Inr' datatype='integer' name='[amount_inr]' role='measure' type='quantitative' />
+            <column-instance column='[age_group]' derivation='None' name='[none:age_group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[amount_inr]' derivation='Sum' name='[sum:amount_inr:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10f6pp60f7eeie15wlr8u0zwk3is].[none:age_group:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:age_group:nk]' member='&quot;18-25&quot;' />
+              <groupfilter function='member' level='[none:age_group:nk]' member='&quot;26-35&quot;' />
+              <groupfilter function='member' level='[none:age_group:nk]' member='&quot;36-45&quot;' />
+              <groupfilter function='member' level='[none:age_group:nk]' member='&quot;46-55&quot;' />
+              <groupfilter function='member' level='[none:age_group:nk]' member='&quot;56+&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.10f6pp60f7eeie15wlr8u0zwk3is].[none:state:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Delhi&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Gujarat&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Haryana&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Karnataka&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Madhya Pradesh&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Maharashtra&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Punjab&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Rajasthan&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Tamil Nadu&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Telangana&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Uttar Pradesh&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;West Bengal&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.10f6pp60f7eeie15wlr8u0zwk3is].[none:state:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.10f6pp60f7eeie15wlr8u0zwk3is].[sum:amount_inr:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.10f6pp60f7eeie15wlr8u0zwk3is].[none:state:nk]</column>
+            <column>[federated.10f6pp60f7eeie15wlr8u0zwk3is].[none:age_group:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.10f6pp60f7eeie15wlr8u0zwk3is].[none:state:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.10f6pp60f7eeie15wlr8u0zwk3is].[none:state:nk]</rows>
+        <cols>[federated.10f6pp60f7eeie15wlr8u0zwk3is].[sum:amount_inr:qk]</cols>
+      </table>
+      <simple-id uuid='{C0770889-05A1-47F4-85A9-9029E216E05C}' />
+    </worksheet>
+    <worksheet name='NAV Trend'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_nav' name='federated.1nfdarw1krybqe13nf5yh1oazbjx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nfdarw1krybqe13nf5yh1oazbjx'>
+            <column caption='Amfi Code' datatype='integer' name='[amfi_code]' role='dimension' type='ordinal' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Nav' datatype='real' name='[nav]' role='measure' type='quantitative' />
+            <column-instance column='[amfi_code]' derivation='None' name='[none:amfi_code:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[date]' derivation='None' name='[none:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[nav]' derivation='Sum' name='[sum:nav:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Month-Trunc' name='[tmn:date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nfdarw1krybqe13nf5yh1oazbjx].[none:amfi_code:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:amfi_code:ok]' member='118632' />
+              <groupfilter function='member' level='[none:amfi_code:ok]' member='119092' />
+              <groupfilter function='member' level='[none:amfi_code:ok]' member='119551' />
+              <groupfilter function='member' level='[none:amfi_code:ok]' member='120503' />
+              <groupfilter function='member' level='[none:amfi_code:ok]' member='120841' />
+              <groupfilter function='member' level='[none:amfi_code:ok]' member='125497' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1nfdarw1krybqe13nf5yh1oazbjx].[none:date:qk]' included-values='in-range'>
+            <min>#2022-01-03#</min>
+            <max>#2026-05-29#</max>
+          </filter>
+          <slices>
+            <column>[federated.1nfdarw1krybqe13nf5yh1oazbjx].[none:date:qk]</column>
+            <column>[federated.1nfdarw1krybqe13nf5yh1oazbjx].[none:amfi_code:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1nfdarw1krybqe13nf5yh1oazbjx].[none:amfi_code:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1nfdarw1krybqe13nf5yh1oazbjx].[sum:nav:qk]</rows>
+        <cols>[federated.1nfdarw1krybqe13nf5yh1oazbjx].[tmn:date:qk]</cols>
+      </table>
+      <simple-id uuid='{42D7212F-88DA-4F5C-B20D-AB85F87A8604}' />
+    </worksheet>
+    <worksheet name='SIP Trends'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_sip_inflows' name='federated.12cvcsp1ij82sg1f266nv1bf3lng' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12cvcsp1ij82sg1f266nv1bf3lng'>
+            <column caption='Month' datatype='date' name='[month]' role='dimension' type='ordinal' />
+            <column-instance column='[month]' derivation='None' name='[none:month:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[yoy_growth_pct]' derivation='None' name='[none:yoy_growth_pct:qk]' pivot='key' type='quantitative' />
+            <column caption='Sip Inflow Crore' datatype='integer' name='[sip_inflow_crore]' role='measure' type='quantitative' />
+            <column-instance column='[sip_inflow_crore]' derivation='Sum' name='[sum:sip_inflow_crore:qk]' pivot='key' type='quantitative' />
+            <column caption='Yoy Growth Pct' datatype='real' name='[yoy_growth_pct]' role='measure' type='quantitative' />
+            <column-instance column='[month]' derivation='Year' name='[yr:month:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.12cvcsp1ij82sg1f266nv1bf3lng].[none:month:qk]' included-values='in-range'>
+            <min>#2022-01-01#</min>
+            <max>#2025-12-01#</max>
+          </filter>
+          <filter class='quantitative' column='[federated.12cvcsp1ij82sg1f266nv1bf3lng].[none:yoy_growth_pct:qk]' included-values='in-range'>
+            <min>15.800000000000001</min>
+            <max>53.049999999999997</max>
+          </filter>
+          <slices>
+            <column>[federated.12cvcsp1ij82sg1f266nv1bf3lng].[none:month:qk]</column>
+            <column>[federated.12cvcsp1ij82sg1f266nv1bf3lng].[none:yoy_growth_pct:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.12cvcsp1ij82sg1f266nv1bf3lng].[sum:sip_inflow_crore:qk]</rows>
+        <cols>[federated.12cvcsp1ij82sg1f266nv1bf3lng].[yr:month:ok]</cols>
+      </table>
+      <simple-id uuid='{54BE6ED9-59A0-4D6D-849B-F31C110A5B4E}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='137'>
+    <window class='worksheet' maximized='true' name='Fund Scorecard'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1t5r1qg0o4znxv10xu5191wnnjfx].[none:sharpe_ratio_computed:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.1t5r1qg0o4znxv10xu5191wnnjfx].[none:score_100:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F8D7F958-6407-4113-BC9D-22BDC514E49B}' />
+    </window>
+    <window class='worksheet' name='NAV Trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1nfdarw1krybqe13nf5yh1oazbjx].[none:amfi_code:ok]' type='filter' />
+            <card param='[federated.1nfdarw1krybqe13nf5yh1oazbjx].[none:date:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.1nfdarw1krybqe13nf5yh1oazbjx].[none:amfi_code:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{676F879D-7FFE-4DA5-AA18-5637AB27EB8B}' />
+    </window>
+    <window class='worksheet' name='Investor Analytics'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.10f6pp60f7eeie15wlr8u0zwk3is].[none:age_group:nk]' type='filter' />
+            <card param='[federated.10f6pp60f7eeie15wlr8u0zwk3is].[none:state:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.10f6pp60f7eeie15wlr8u0zwk3is].[none:state:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{68AFBD23-B1E1-44A4-866C-5B31862C8350}' />
+    </window>
+    <window class='worksheet' name='SIP Trends'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.12cvcsp1ij82sg1f266nv1bf3lng].[none:yoy_growth_pct:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.12cvcsp1ij82sg1f266nv1bf3lng].[none:month:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9AD44AB1-403A-4FDB-9217-6B61663BF15A}' />
+    </window>
+  </windows>
+</workbook>

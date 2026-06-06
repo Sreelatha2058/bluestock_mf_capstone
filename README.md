@@ -2,7 +2,7 @@
 
 **Company:** Bluestock Fintech Pvt. Ltd.  
 **Domain:** Mutual Fund / Fintech  
-**Duration:** 7 Working Days  
+**Duration:** 5 Working Days  
 
 ## Project Overview
 End-to-end Mutual Fund Analytics Platform that ingests AMFI data, transforms it through an ETL pipeline, stores it in SQLite, and presents insights via an interactive Tableau dashboard.
