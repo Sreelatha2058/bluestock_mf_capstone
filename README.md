@@ -33,6 +33,8 @@ python scripts/recommender.py
 ```
 
 ## How to Open Dashboard
+open url `https://public.tableau.com/app/profile/sreelatha.reddy/viz/bluestock_mf_dashboard_17812878948120/SIPTrends?publish=yes`
+                        or
 Open `dashboard/bluestock_mf_dashboard.twbx` in Tableau Public
 
 ## Project Structure
